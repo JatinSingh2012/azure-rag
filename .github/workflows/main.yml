@@ -33,4 +33,4 @@ jobs:
           context: ./webapp
           file: ./webapp/Dockerfile
           push: true
-          tags: ghcr.io/${{ github.repository }}/webapp:latest
+          tags: ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}-webapp:latest
