@@ -1,6 +1,6 @@
 FROM python:3.10
 
-COPY ./requirements.txt /webapp/requirements.txt
+COPY requirements.txt /webapp/requirements.txt
 COPY webapp/* /webapp
 
 WORKDIR /webapp
