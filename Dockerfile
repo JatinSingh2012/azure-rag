@@ -5,11 +5,11 @@ COPY webapp/* /webapp
 
 WORKDIR /webapp
 
-RUN pip install -r requirements.txt \
-    && chmod +x google_gemma-3-1b-it-Q6_K.llamafile
+
 RUN apt-get update && apt-get install -y wget
 RUN wget https://huggingface.co/Mozilla/gemma-3-1b-it-llamafile/resolve/main/google_gemma-3-1b-it-Q6_K.llamafile
 # Start Llamafile in the background, then start FastAPI
-COPY google_gemma-3-1b-it-Q6_K.llamafile /webapp/google_gemma-3-1b-it-Q6_K.llamafile
+RUN pip install -r requirements.txt \
+    && chmod +x google_gemma-3-1b-it-Q6_K.llamafile
 
 CMD ./google_gemma-3-1b-it-Q6_K.llamafile & uvicorn main:app --host 0.0.0.0
