@@ -30,7 +30,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: ./webapp
+          context: .
           file: ./Dockerfile
           push: true
           tags: ghcr.io/jatinsingh2012/azure-rag-webapp:latest
