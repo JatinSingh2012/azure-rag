@@ -1,3 +1,5 @@
+[![Build and Push Docker image](https://github.com/JatinSingh2012/azure-rag/actions/workflows/main.yml/badge.svg)](https://github.com/JatinSingh2012/azure-rag/actions/workflows/main.yml)
+
 # Retrieval Augmented Generation (RAG) with Azure
 
 A Retrieval Augmented Generation example with Azure, using Azure OpenAI Service, Azure Cognitive Search, embeddings, and a sample CSV file to produce
